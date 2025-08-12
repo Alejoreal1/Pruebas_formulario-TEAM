@@ -29,11 +29,11 @@ class WhenFillingTheForm {
 
         // 3. Llenar y enviar el formulario
         form.fillForm(
-                "Juan camilo",
-                "111574598",
-                "30025459205",
-                "jucamis@example.com",
-                "2000-03-15",
+                "Stick ",
+                "11157454574",
+                "300315574",
+                "stick@example.com",
+                "1990-03-15",
                 "Colombia",
                 "Armenia",
                 "ingenieria_sistemas",
@@ -41,7 +41,7 @@ class WhenFillingTheForm {
         );
 
         //esperar para ver la alerta antes de que Serenity cierre el navegador
-        Thread.sleep(10000); // espera 10 segundos
+        Thread.sleep(1000); // espera 1 segundo
 
         Serenity.reportThat("Formulario completado y enviado correctamente",
                 () -> assertThat(true).isTrue()
